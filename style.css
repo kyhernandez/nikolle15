@@ -1,0 +1,311 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100%;
+    min-height: 100vh;
+    font-family: "Cinzel", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    background-color: #fcf8f7;
+    background-image: url(/assets/fondo.jpg);
+    background-attachment: fixed;
+}
+
+.header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.date{
+    display: flex;
+    position: relative;
+    margin: 20px 0;
+}
+
+.date_line {
+    width: 100px;
+    border-top: 1px solid #9a5b71;
+    position: absolute;
+}
+
+.date_line_left{
+    top: 13px;
+    left: -105px;
+}
+
+.date_line_right{
+    top: 13px;
+    left: 180px;
+}
+
+.date_number{
+    color: #9a5b71;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.date_name{
+    color: #9a5b71;
+    font-size: 40px;
+    font-weight: 700;
+    margin: 20px;
+    text-align: center;
+}
+
+.header_phrase{
+    color: #bc913b;
+    font-size: 30px;
+    font-weight: 600;
+    margin-bottom: 25px;
+}
+
+.header_comillas{
+    margin: 10px 0;
+}
+
+.header_main-phrase{
+    color: #9a5b71;
+    font-size: 18px;
+    font-weight: 500;
+    text-align: center;
+    line-height: 28px;
+    width: 70%;
+}
+
+body::-webkit-scrollbar {
+  width: 12px;               /* width of the entire scrollbar */
+}
+
+body::-webkit-scrollbar-track {
+  background: #f7dfe3;        /* color of the tracking area */
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #9a5b71;    /* color of the scroll thumb */
+  border-radius: 20px;       /* roundness of the scroll thumb */
+  border: 3px solid #f7cad2;  /* creates padding around scroll thumb */
+}
+
+.count{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+}
+
+.count_img{
+    width: 400px;
+    align-self: center;
+}
+
+.count_title{
+    color: #bc913b;
+    font-size: 40px;
+    font-weight: 700;
+    text-align: center;
+    position: absolute;
+    top: 100px;
+    align-self: center;
+}
+
+.count_container{
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    top: 165px;
+    align-self: center;
+}
+
+.count_number{
+    font-size: 25px;
+    font-weight: 700;
+    color: #9a5b71;
+    border-right: 1px solid #ccc;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.count_number:last-child{
+    border: none;
+}
+
+.count_text{
+    font-size: 18px;
+    font-weight: 400;
+    color: #bc913b;
+}
+
+.count_fin{
+    display: none;
+    position: absolute;
+    align-self: center;
+    font-size: 23px;
+    font-weight: 700;
+    color: #9a5b71;
+}
+
+.count_heart{
+    align-self: center;
+    position: absolute;
+    bottom: 48px;
+}
+.party{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.party_svg{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    box-shadow: inset 0px 0px 10px 3px #ccc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 40px auto;
+}
+
+.ribbon {
+    margin: 80px 0 20px;
+  font-size: 38px;
+  font-weight: 600;
+  color: #fff;
+}
+.ribbon {
+  --s: 13px; /* the ribbon size */
+  --d: 10px;  /* the depth */
+  --c: 15px;  /* the cutout part */
+  
+  padding: 10px calc(70px + .5em) 0;
+  line-height: 1.8;
+  background:
+    conic-gradient(from  45deg at left  var(--s) top var(--d),
+     #0008 12.5%,#0000 0 37.5%,#0004 0) 0   /50% 100% no-repeat,
+    conic-gradient(from -45deg at right var(--s) top var(--d),
+     #0004 62.5%,#0000 0 87.5%,#0008 0) 100%/50% 100% no-repeat;
+  clip-path: polygon(0 0,calc(var(--s) + var(--d)) 0,calc(var(--s) + var(--d)) var(--d),calc(100% - var(--s) - var(--d)) var(--d),calc(100% - var(--s) - var(--d)) 0,100% 0, calc(100% - var(--c)) calc(50% - var(--d)/2),100% calc(100% - var(--d)),calc(100% - var(--s)) calc(100% - var(--d)),calc(100% - var(--s)) 100%,var(--s) 100%,var(--s) calc(100% - var(--d)),0 calc(100% - var(--d)),var(--c) calc(50% - var(--d)/2));
+  background-color: #bc913b; /* the main color */
+  width: fit-content;
+}
+
+.party_desc{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px 0;
+}
+
+.party_text{
+    color: #9a5b71;
+    font-size: 30px;
+    font-weight: 600;
+    text-align: center;
+}
+
+.party_subtext{
+    color: #bc913b;
+    font-size: 20px;
+    font-weight: 600;
+    text-align: center;
+    margin: 10px 0;
+}
+
+.party_button{
+    background-color: #bf0e78;
+    color: white;
+    padding: 15px 30px;
+    border-radius: 30px;
+    font-family: "Cinzel", serif;
+    font-size: 18px;
+    font-weight: 600;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    margin: 15px 0;
+    width: 280px;
+    text-decoration: none;
+    text-align: center;
+}
+
+/* The Modal (background) */
+.modal {
+  display: flex; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+/* Modal Content */
+.modal-content {
+    display: flex;
+    background-color: rgba(236, 228, 228, 0.5);
+    padding: 10px;
+    border: none;
+    border-radius: 20px;
+}
+
+/* The Close Button */
+.close {
+    color: #ffffff;
+    font-size: 50px;
+    font-weight: bold;
+    position: relative;
+    top: -20px;
+    right: -10px;
+    width: 30px;
+    height: 30px;
+}
+
+.close:hover,
+.close:focus {
+    color: #bf0e78;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+
+.content_pictures{
+    display:flex;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+}
+
+.pictures{
+    margin-bottom: 40px;
+}
+
+.pictures_img{
+    margin-top: 30px;
+    width: 100%;
+    height: 100%;
+}
+
+.pictures_text{
+    margin: 50px 0 10px;
+    color: #9a5b71;
+    font-size: 35px;
+    font-weight: 600;
+    text-align: center;
+}
+
