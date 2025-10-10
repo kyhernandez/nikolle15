@@ -10,9 +10,9 @@ window.addEventListener('load', function () {
 			next: '.glider-next'
 		},
 		responsive: [
-			{
-				// screens greater than >= 480px
-				breakpoint: 480,
+      {
+				// screens greater than >= 320px
+				breakpoint: 320,
 				settings: {
 					// Set to `auto` and provide item width to adjust to viewport
 					slidesToShow: 2,
